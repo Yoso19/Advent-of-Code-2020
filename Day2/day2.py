@@ -1,5 +1,3 @@
-from collections import Counter
-
 def password_philosophy():
     with open('Day2.txt') as passwords_file:
         lines = [line.strip() for line in passwords_file.readlines()]
