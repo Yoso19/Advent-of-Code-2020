@@ -7,7 +7,6 @@ def handheld_halting():
 
     while True:
         if program_counter in executed_instructions:
-            result = accumulator
             break
         else:
             executed_instructions.add(program_counter)
@@ -27,12 +26,10 @@ def handheld_halting():
     program_counter = 0
     executed_instructions = set()
     break_point = len(boot_code)
-    result = None
     change = False
     changed = set()
     while True:
         if program_counter >= break_point:
-            result = accumulator
             break
         if program_counter in executed_instructions:
             program_counter = 0
@@ -62,7 +59,7 @@ def handheld_halting():
                     program_counter += 1
             
     print('PART 2: Value in the accumulator is:', accumulator)
-    
+
 
 if __name__ == '__main__':
     handheld_halting()
