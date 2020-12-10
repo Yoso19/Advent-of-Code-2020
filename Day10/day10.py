@@ -38,9 +38,5 @@ def adapter_array():
     print('Total number of distinct ways is:', result)
 
 
-    
-
-    
-
 if __name__ == '__main__':
     adapter_array()
